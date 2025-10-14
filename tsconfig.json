@@ -3,8 +3,8 @@
   "compilerOptions": {
     /* Base Options */
     "target": "ES2022", // The version of JavaScript the compiler will output
-    "module": "NodeNext", // The module system for the project
-    "moduleResolution": "NodeNext", // How modules get resolved
+    "module": "ESNext", // The module system for the project
+    "moduleResolution": "bundler", // How modules get resolved
     "rootDir": "./src", // Where your source (.ts) files are
     "outDir": "./dist", // Where the compiled (.js) files will go (good practice)
     "esModuleInterop": true, // Enables compatibility with different module types
@@ -15,7 +15,7 @@
     // "outDir": "./dist",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "types": [],
+    "types": ["node", "vitest/globals"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
