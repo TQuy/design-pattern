@@ -24,6 +24,9 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+    "paths": {
+      "~/*": ["./src/*"]
+    },
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
@@ -41,9 +44,7 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
-  "include": [
-    "src/**/*"
-  ] // Tells TypeScript to only look for files inside the 'src' folder
+  "include": ["src/**/*"] // Tells TypeScript to only look for files inside the 'src' folder
 }

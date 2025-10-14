@@ -35,7 +35,7 @@ class DarkTextField implements TextField {
   }
 }
 
-class LightUIFactory implements UIFactory {
+export class LightUIFactory implements UIFactory {
   createButton(): Button {
     return new LightButton();
   }
@@ -44,7 +44,7 @@ class LightUIFactory implements UIFactory {
   }
 }
 
-class DarkUIFactory implements UIFactory {
+export class DarkUIFactory implements UIFactory {
   createButton(): Button {
     return new DarkButton();
   }
@@ -53,7 +53,7 @@ class DarkUIFactory implements UIFactory {
   }
 }
 
-class UIApp {
+export class UIApp {
   constructor(private themeFactory: UIFactory) {
     this.themeFactory = themeFactory;
   }
