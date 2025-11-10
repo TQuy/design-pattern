@@ -27,3 +27,5 @@ const text = [
   new Character("H", 0, 0, styleFactory.getStyle("Arial", 12, "black")),
   new Character("i", 10, 0, styleFactory.getStyle("Arial", 12, "black")),
 ];
+
+console.log(text);
